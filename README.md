@@ -34,17 +34,11 @@ To build the production version: `npm run build` (output goes to `dist/`), and `
 
 ## Deploy for free
 
-### Option A — GitHub Pages (already set up)
+### Option A — GitHub Pages (already live)
 
-This repo includes `.github/workflows/deploy.yml`, which builds and publishes the site on every push to `main`.
+The site is live at **https://shantanu08080909.github.io/lover/**.
 
-One-time setup:
-
-1. On GitHub, open the repo → **Settings** → **Pages**.
-2. Under **Build and deployment → Source**, choose **GitHub Actions**.
-3. Go to the **Actions** tab and re-run the latest "Deploy to GitHub Pages" run (or push any commit).
-
-The site will be live at `https://<your-username>.github.io/lover/`.
+`.github/workflows/deploy.yml` rebuilds it on every push to `main` and publishes the result to the `gh-pages` branch, which GitHub Pages serves. Nothing else to set up; changes go live a minute or two after you push.
 
 ### Option B — Vercel
 
